@@ -5,10 +5,16 @@ import 'package:general_app/pages/get_into.dart';
 import 'package:general_app/pages/geo.dart';
 import 'pages/home_page.dart';
 import 'pages/counter.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
-void main() => runApp(const App());
+void main() async {
+  runApp(const App());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+}
 
 class App extends StatefulWidget {
   const App({super.key});
