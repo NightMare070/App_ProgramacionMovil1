@@ -63,7 +63,7 @@ class _AppState extends State<App> {
         '/contador': (context) => const Counter(),
         '/calculadora': (context) => const Calculator(),
         '/acerca de': (context) => const About(),
-        '/agregar evento': (context) => const AddEvent()
+        '/Agregar evento': (context) => const AddEvent()
       },
       home: Scaffold(
         body: _pagesOptions.elementAt(_selectedIndex),

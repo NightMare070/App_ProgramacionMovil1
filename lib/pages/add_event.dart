@@ -27,7 +27,6 @@ class _AddEventState extends State<AddEvent> {
   final TextEditingController _nombreEvento = TextEditingController();
   final TextEditingController _inicioEvento = TextEditingController();
   final TextEditingController _finEvento = TextEditingController();
-  final TextEditingController _colorEvento = TextEditingController();
 
   @override
   void initState() {
