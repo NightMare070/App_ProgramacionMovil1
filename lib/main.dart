@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:general_app/pages/about.dart';
+import 'package:general_app/pages/add_event.dart';
 import 'package:general_app/pages/calculator.dart';
 import 'package:general_app/pages/get_into.dart';
 import 'package:general_app/pages/geo.dart';
+import 'package:general_app/pages/calendar.dart';
 import 'pages/home_page.dart';
 import 'pages/counter.dart';
 
@@ -31,6 +33,7 @@ class _AppState extends State<App> {
     const Counter(),
     const Calculator(),
     const Geo(),
+    const Calendar()
   ];
 
   void _home(int n) {
@@ -59,7 +62,8 @@ class _AppState extends State<App> {
         '/inicio': (context) => const HomePage(),
         '/contador': (context) => const Counter(),
         '/calculadora': (context) => const Calculator(),
-        '/acerca de': (context) => const About()
+        '/acerca de': (context) => const About(),
+        '/agregar evento': (context) => const AddEvent()
       },
       home: Scaffold(
         body: _pagesOptions.elementAt(_selectedIndex),
@@ -73,6 +77,8 @@ class _AppState extends State<App> {
                 icon: Icon(Icons.calculate), label: 'Calculadora'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.location_on), label: 'Ubicación'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.calendar_today), label: 'Calendario'),
             BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Ingresa'),
           ],
           currentIndex: _selectedIndex,
