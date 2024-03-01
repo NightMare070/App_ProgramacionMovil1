@@ -20,7 +20,7 @@ class _AboutState extends State<About> {
       body: const Center(
         child: Column(
           children: [
-            Text('Página de acerca de'),
+            Text('Chinguen a su madre'),
           ],
         ),
       ),
