@@ -192,7 +192,7 @@ class _AddEventState extends State<AddEvent> {
                   ElevatedButton(
                       onPressed: () {
                         _cargarDatos();
-                        Navigator.pop(context);
+                        Navigator.popAndPushNamed(context, "/");
                       },
                       child: const Text('Agregar'))
                 ],
